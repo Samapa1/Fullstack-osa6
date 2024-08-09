@@ -1,12 +1,11 @@
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
-import { useContext } from 'react'
+import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { createAnecdote } from '../requests'
-import NotificationContext from './NotificationContext'
+import { useNotificationDispatch } from './NotificationContext'
 
 const AnecdoteForm = () => {
 
   const queryClient = useQueryClient()
-  const [notification, dispatch] = useContext(NotificationContext)
+  const dispatch = useNotificationDispatch()
 
   const newAnecdoteMutation = useMutation({ 
     mutationFn: createAnecdote,
@@ -21,22 +20,11 @@ const AnecdoteForm = () => {
     },
     retry: false
    })
-  
-  // console.log(JSON.parse(JSON.stringify(newAnecdoteMutation)))
-  // if (newAnecdoteMutation.isError) {
-  //   console.log("virhe")
-  //   dispatch({ type: 'NOTIFY', payload: `too short anecdote, must have length 5 or more' `})
-  //   setTimeout(() => {
-  //       dispatch({type: 'CLEAR'})
-  //   }, 3000)
-  // }
-  
-  
+    
   const onCreate = (event) => {
     event.preventDefault()
     const content = event.target.anecdote.value
     event.target.anecdote.value = ''
-    // console.log('new anecdote')
     newAnecdoteMutation.mutate({ content: content, votes: 0}, { onSuccess: () => {
       dispatch({ type: 'NOTIFY', payload: `new anecdote '${content}' `})
       setTimeout(() => {
@@ -46,7 +34,6 @@ const AnecdoteForm = () => {
 
 
   }
-        // dispatch(setNotification(`new anecdote '${anecdote}'`, 3000))
 
   return (
     <div>

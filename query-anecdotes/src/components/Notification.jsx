@@ -1,5 +1,4 @@
-import { useContext } from 'react'
-import NotificationContext from './NotificationContext'
+import { useNotificationValue } from './NotificationContext'
 
 const Notification = () => {
 
@@ -10,8 +9,7 @@ const Notification = () => {
     marginBottom: 5
   }
   
-  // if (true) return null
-  const [notification, dispatch] = useContext(NotificationContext)
+  const notification = useNotificationValue()
 
   const message = notification !== ''
 
@@ -24,17 +22,6 @@ const Notification = () => {
    }
    </div>)
  
-
-  // return (
-  //   <div style={style}>
-      
-  //   </div>
-  // )
 }
 
 export default Notification
-
-// dispatch(notify(anecdote))
-//     setTimeout(() => {
-//       dispatch(clear())
-//           }, timeout)

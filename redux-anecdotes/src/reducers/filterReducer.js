@@ -7,7 +7,6 @@ const initialState = ''
     reducers: {
       filterChange(state, action) {
         const chosenLetters = action.payload
-        // state = chosenLetters
         return chosenLetters
       },
     },

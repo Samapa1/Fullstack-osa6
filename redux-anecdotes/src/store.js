@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
-import anecdoteReducer from './reducers/anecdoteReducer2'
-import filterReducer from './reducers/filterReducer2'
+import anecdoteReducer from './reducers/anecdoteReducer'
+import filterReducer from './reducers/filterReducer'
 import notificationReducer from './reducers/notificationReducer'
 
 const Store = configureStore({

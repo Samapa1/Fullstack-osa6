@@ -2,17 +2,17 @@
   "anecdotes": [
     {
       "content": "If it hurts, do it more often",
-      "votes": 20,
+      "votes": 25,
       "id": "47145"
     },
     {
       "content": "Adding manpower to a late software project makes it later!",
-      "votes": 3,
+      "votes": 5,
       "id": "21149"
     },
     {
       "content": "The first 90 percent of the code accounts for the first 10 percent of the development time...The remaining 10 percent of the code accounts for the other 90 percent of the development time.",
-      "votes": 1,
+      "votes": 3,
       "id": "69581"
     },
     {
@@ -27,62 +27,27 @@
     },
     {
       "content": "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.",
-      "votes": 1,
+      "votes": 2,
       "id": "98312"
     },
     {
-      "content": "Programming is funny",
+      "content": "Programming is difficult",
       "votes": 2,
-      "id": "5a37"
+      "id": "283d"
     },
     {
-      "id": "283d",
-      "content": "Programming is difficult",
-      "votes": 0
-    },
-    {
-      "content": "heehheheehhe",
+      "content": "Scala is nice",
       "votes": 1,
-      "id": "df1e"
-    },
-    {
-      "id": "579b",
-      "content": "Java is difficult",
-      "votes": 0
-    },
-    {
-      "id": "87b7",
-      "content": "Python is easy",
-      "votes": 0
-    },
-    {
-      "id": "3c3c",
-      "content": "Java is difficult",
-      "votes": 0
-    },
-    {
-      "content": "heehheheehhe",
-      "votes": 1,
-      "id": "477d"
-    },
-    {
-      "content": "Scala is interesting",
-      "votes": 1,
-      "id": "78f1"
+      "id": "d851"
     },
     {
       "content": "Python is easy",
-      "votes": 1,
-      "id": "3f6f"
+      "votes": 2,
+      "id": "2a9c"
     },
     {
-      "content": "Programming is difficult",
-      "votes": 1,
-      "id": "8623"
-    },
-    {
-      "id": "9222",
-      "content": "Programming is difficult",
+      "id": "cb8c",
+      "content": "Python is easy",
       "votes": 0
     }
   ]

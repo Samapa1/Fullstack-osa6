@@ -1,5 +1,4 @@
 import { useSelector } from 'react-redux'
-// import { notify} from '../reducers/notificationReducer'
 
 const Notification = () => {
   const style = {
@@ -23,7 +22,3 @@ const Notification = () => {
 }
 
 export default Notification
-
-   {/* render here notification... */}
-      {/* {notification} */}
-      {/* {notification !== "Testi" && notification }  */}
